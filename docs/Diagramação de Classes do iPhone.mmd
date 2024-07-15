@@ -1,0 +1,38 @@
+classDiagram
+    class ReprodutorMusical {
+        +tocar() void
+        +pausar() void
+        +selecionarMusica() void
+
+        Interface encarregada de implementar a 
+        funcionalidade de reprodução de 
+        arquivos de áudio
+    }
+    
+
+    class AparelhoTelefonico {
+        +ligar(numero: String) void
+        +atender(numero: String) void
+        +iniciarCorreioVoz(numero: String) void
+
+        Interface encarregada de implementar
+        a funcionalidade de um telefone.
+    }
+
+    class NavegadorInternet {
+        +exibirPagina(url: String) void
+        +adicionarNovaAba(url: String) void
+        +atualizarPagina() void
+
+        Interface encarregada de implementar
+        a funcionalidade de um navegador.
+    }
+
+    class iPhone {
+        Funcionalidades disponíveis
+        no iPhone:
+    }
+
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
